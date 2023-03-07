@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import Details from './Components/Details';
 import Navbar from './Components/Navbar';
 import MealDetail from './Components/MealDetail';
+import NotFound from './Components/NotFound';
 
 
 
@@ -25,8 +26,9 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/Favourite' element={<Home />}></Route>
 
-        <Route path='/:id' element={<Details />}></Route>
+        <Route path='/meal/:id' element={<Details />}></Route>
         <Route path='/:id/:mealname' element={<MealDetail />}></Route>
+        <Route path='*' element={<NotFound/> }></Route>
 
 
 

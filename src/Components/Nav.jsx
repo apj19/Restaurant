@@ -64,7 +64,7 @@ function Nav() {
       <Tab.Group>
         <Tab.List className="flex flex-col w-32  rounded-xl  p-1">
           {cat.map((category) => (
-            <Link to={`/${category}`} key={category}>
+            <Link to={`/meal/${category}`} key={category}>
             <Tab
               
               className={({ selected }) =>

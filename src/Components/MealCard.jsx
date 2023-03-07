@@ -35,7 +35,7 @@ function MealCard({imglink,mealname,mealtype}) {
             <img className="h-full w-full object-cover transition-transform duration-700  hover:scale-105 " src={imglink} alt="not avaliable" />
 
         </div>
-        <Link to={`/${mealtype}/${mealname}`} >
+        <Link to={`/meal/${mealtype}/${mealname}`} >
         <h3 className="px-4  mt-2 text-center hover:underline"  >{mealname}</h3>
         </Link>
         

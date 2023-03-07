@@ -2,33 +2,37 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import MealCard from './MealCard';
+import { mealsnames } from './mealsnames';
 
 
 function Details() {
     const {id}=useParams();
-    // console.log(id);
+    //  console.log(id);
     const [meal,setMeal]= useState([]);
     const mealUrl=`www.themealdb.com/api/json/v1/1/filter.php?c=${id}`;
     const [showLoader,setShowLoder]= useState(false);
         
     // console.log(meals.length);
-    useEffect(() => {
-      async function fetchdata(){
-        setShowLoder(true);
-
-        const mealdata= await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${id}`);
-        // console.log(mealdata.data);
-        setMeal(mealdata.data.meals);
-        setShowLoder(false);
-        // console.log(mealdata.data.meals[0]);
-
-      }
-      fetchdata();
     
+      useEffect(() => {
+        async function fetchdata(){
+          setShowLoder(true);
+  
+          const mealdata= await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${id}`);
+          // console.log(mealdata.data);
+          setMeal(mealdata.data.meals);
+          setShowLoder(false);
+          // console.log(mealdata.data.meals[0]);
+  
+        }
+        fetchdata();
       
-    }, [mealUrl])
+        
+      }, [mealUrl])
+   
+   
     
-
+    
 
   return (
     <div >
