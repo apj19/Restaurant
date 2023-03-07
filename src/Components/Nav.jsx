@@ -65,7 +65,20 @@ function Nav() {
         <Tab.List className="flex flex-col w-32  rounded-xl  p-1">
           {cat.map((category) => (
             <Link to={`/meal/${category}`} key={category}>
-            <Tab
+            <Tab className='w-full rounded-lg text-start pl-2 py-2.5 text-sm font-medium leading-5 text-blue-700 ring-opacity-60  ring-offset-blue-400 focus:outline-none focus:ring-2 focus:bg-slate-100 hover:bg-blue-400/[0.12] hover:text-blue-700'
+              
+              
+              
+            >
+              {category}
+            </Tab>
+            </Link>
+          ))}
+        </Tab.List>
+
+
+
+        {/* <Tab
               
               className={({ selected }) =>
                 classNames(
@@ -78,10 +91,7 @@ function Nav() {
               }
             >
               {category}
-            </Tab>
-            </Link>
-          ))}
-        </Tab.List>
+            </Tab> */}
         {/* <Tab.Panels className="mt-2">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel

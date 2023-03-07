@@ -10,7 +10,7 @@ function MealDetail() {
         // setShowLoder(true);
 
         const mealdata= await axios.get(`https://themealdb.com/api/json/v1/1/search.php?s=${mealname}`);
-        console.log(mealdata.data);
+        // console.log(mealdata.data);
 
       }
       fetchdata();

@@ -27,7 +27,7 @@ function App() {
         <Route path='/Favourite' element={<Home />}></Route>
 
         <Route path='/meal/:id' element={<Details />}></Route>
-        <Route path='/:id/:mealname' element={<MealDetail />}></Route>
+        <Route path='/meal/:id/:mealname' element={<MealDetail />}></Route>
         <Route path='*' element={<NotFound/> }></Route>
 
 
