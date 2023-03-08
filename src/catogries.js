@@ -21,23 +21,13 @@ const latest = [
       "https://www.themealdb.com/images/media/meals/qywups1511796761.jpg",
     idMeal: "Side",
   },
-  {
-    strMeal: "Baingan Bharta",
-    strMealThumb:
-      "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
-    idMeal: "Vegetarian",
-  },
+  
   {
     strMeal: "Roast fennel and aubergine paella",
     strMealThumb: "https://www.themealdb.com/images/media/meals/1520081754.jpg",
     idMeal: "Vegan",
-  },
-  {
-    strMeal: "Ayam Percik",
-    strMealThumb:
-      "https://www.themealdb.com/images/media/meals/020z181619788503.jpg",
-    idMeal: "Chicken",
-  },
+  }
+  
 ];
 
 export {catogries,latest}

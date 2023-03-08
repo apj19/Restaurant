@@ -36,6 +36,7 @@ function Details() {
 
   return (
     <div >
+      <h2 className='text-center text-[1.5rem] md:text-[2rem] mb-8 tracking-widest text-[#EB455F]'>{id}</h2>
     {showLoader &&  <div className='w-full h-full absolute left-0 top-0 backdrop-blur-md z-10 flex justify-center items-center'>
       <p className='animate-bounce'>Loading.......</p>
 
